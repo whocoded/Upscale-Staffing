@@ -142,12 +142,12 @@ export default function Home() {
                     Upscale Staffing provides pre-vetted healthcare professionals when and where they are needed most. From hospitals to home health agencies, our staffing solutions deliver consistent, high-quality care.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-6 animate-fadeInUp animate-delay-400">
-                    <button className="text-white px-10 py-4 rounded-full font-bold text-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105" style={{backgroundColor: '#0d74bb'}} onMouseEnter={(e) => e.target.style.backgroundColor = '#0a5d96'} onMouseLeave={(e) => e.target.style.backgroundColor = '#0d74bb'}>
+                    <a href="/apply" className="text-white px-10 py-4 rounded-full font-bold text-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 inline-block text-center" style={{backgroundColor: '#0d74bb'}} onMouseEnter={(e) => e.target.style.backgroundColor = '#0a5d96'} onMouseLeave={(e) => e.target.style.backgroundColor = '#0d74bb'}>
                       Start Hiring
-                    </button>
-                    <button className="border-2 px-10 py-4 rounded-full font-bold text-lg hover:text-white transition-all duration-300" style={{borderColor: '#0d74bb', color: '#0d74bb'}} onMouseEnter={(e) => {e.target.style.backgroundColor = '#0d74bb'; e.target.style.color = 'white';}} onMouseLeave={(e) => {e.target.style.backgroundColor = 'transparent'; e.target.style.color = '#0d74bb';}}>
+                    </a>
+                    <a href="/about" className="border-2 px-10 py-4 rounded-full font-bold text-lg hover:text-white transition-all duration-300 inline-block text-center" style={{borderColor: '#0d74bb', color: '#0d74bb'}} onMouseEnter={(e) => {e.target.style.backgroundColor = '#0d74bb'; e.target.style.color = 'white';}} onMouseLeave={(e) => {e.target.style.backgroundColor = 'transparent'; e.target.style.color = '#0d74bb';}}>
                       Learn More
-                    </button>
+                    </a>
                   </div>
                 </div>
                 <div className="relative animate-fadeInRight">
@@ -434,7 +434,7 @@ export default function Home() {
                 <a href="/about" className="text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 text-center" style={{backgroundColor: '#0d74bb'}}>
                   Learn More About Us
                 </a>
-                <a href="/about#team" className="border-2 border-gray-400 text-gray-300 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-gray-900 transition-all duration-300 text-center">
+                <a href="/about" className="border-2 border-gray-400 text-gray-300 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-gray-900 transition-all duration-300 text-center">
                   Meet Our Team
                 </a>
               </div>
@@ -757,12 +757,12 @@ export default function Home() {
               <p className="text-gray-600 mb-6 leading-relaxed">
                 Connecting healthcare facilities with qualified nurses, physicians, and clinical specialists to ensure optimal patient care and operational efficiency.
               </p>
-              <a href="#" className="font-semibold transition-colors inline-flex items-center" style={{color: '#0d74bb'}} onMouseEnter={(e) => e.target.style.color = '#1e40af'} onMouseLeave={(e) => e.target.style.color = '#0d74bb'}>
-                Explore Now
-                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </a>
+              <a href="/industries" className="font-semibold transition-colors inline-flex items-center" style={{color: '#0d74bb'}} onMouseEnter={(e) => e.target.style.color = '#1e40af'} onMouseLeave={(e) => e.target.style.color = '#0d74bb'}>
+                  Learn More
+                  <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
               <div className="mt-6 relative">
                 <div className="bg-gradient-to-br from-green-200 to-green-300 rounded-2xl p-6 h-48 flex items-center justify-center overflow-hidden">
                   <div className="w-full h-full bg-gradient-to-br from-green-300/50 to-green-400/50 rounded-xl flex items-center justify-center">
@@ -791,8 +791,8 @@ export default function Home() {
               <p className="text-gray-600 mb-6 leading-relaxed">
                 Providing skilled administrative and support staff to streamline operations and enhance the overall efficiency of healthcare organizations.
               </p>
-              <a href="#" className="font-semibold transition-colors inline-flex items-center" style={{color: '#0d74bb'}} onMouseEnter={(e) => e.target.style.color = '#1e40af'} onMouseLeave={(e) => e.target.style.color = '#0d74bb'}>
-                Explore Now
+              <a href="/industries" className="font-semibold transition-colors inline-flex items-center" style={{color: '#0d74bb'}} onMouseEnter={(e) => e.target.style.color = '#1e40af'} onMouseLeave={(e) => e.target.style.color = '#0d74bb'}>
+                Learn More
                 <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
@@ -824,6 +824,138 @@ export default function Home() {
 
 
 
+          </div>
+        </div>
+      </section>
+
+      {/* JCAHO Accreditation Section */}
+      <section className="py-24 bg-white relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Left Side - Image */}
+            <div className="relative animate-fadeInLeft">
+              <div className="relative bg-gradient-to-br from-blue-50 to-blue-100 rounded-3xl p-8 shadow-2xl">
+                {/* JCAHO Badge */}
+                  <div className="absolute top-4 right-4 bg-blue-900 text-white px-4 py-2 rounded-lg shadow-lg z-20 animate-pulse">
+                  <div className="flex items-center space-x-2">
+                    <div className="w-3 h-3 rounded-full bg-green-500"></div>
+                    <span className="text-sm font-medium">JACHO ACCREDITED</span>
+                  </div>
+                  <p className="text-xs text-blue-200 mt-1">
+                    Quality & Safety Certified ✓
+                    <span className="block text-green-400">Verified Standards</span>
+                  </p>
+                </div>
+
+                {/* Main Image Area */}
+                <div className="w-full h-96 bg-gradient-to-br from-blue-100 to-white rounded-2xl flex items-center justify-center relative overflow-hidden">
+                  <div className="absolute inset-0 opacity-10">
+                    <img src="/logo.png" alt="JACHO Accreditation" className="w-full h-full object-contain" />
+                  </div>
+                  <div className="relative z-10 text-center">
+                    <div className="w-32 h-32 bg-white rounded-full mx-auto mb-4 flex items-center justify-center shadow-lg border-4 border-blue-200">
+                      <svg className="w-16 h-16 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                      </svg>
+                    </div>
+
+                  </div>
+                </div>
+
+                {/* Certification Info */}
+                <div className="absolute bottom-4 left-4 bg-white rounded-2xl p-4 shadow-lg max-w-xs">
+                  <div className="flex items-center space-x-2 mb-2">
+                    <div className="w-8 h-8 rounded-full flex items-center justify-center bg-green-600">
+                      <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                      </svg>
+                    </div>
+                    <span className="text-sm font-medium text-gray-800">The Joint Commission</span>
+                  </div>
+                  <p className="text-sm text-gray-600">
+                    Rigorous standards met for healthcare quality and safety.
+                    <span className="text-blue-600 font-semibold block">Trusted Excellence</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Side - Content */}
+            <div className="animate-fadeInRight">
+              <h2 className="text-4xl lg:text-5xl font-bold mb-6 leading-tight text-gray-900">
+                Commitment to Quality & Compliance
+              </h2>
+              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+              Upscale Staffing is proud to be accredited by The Joint Commission (JACHO), the national leader in healthcare quality and safety.
+            </p>
+              
+              <div className="mb-8">
+                <p className="text-lg font-semibold text-gray-800 mb-4">Our JACHO accreditation demonstrates our commitment to:</p>
+                <ul className="space-y-3">
+                  <li className="flex items-start space-x-3">
+                    <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <svg className="w-3 h-3 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    <span className="text-gray-700">Rigorous employee screening and credentialing</span>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <svg className="w-3 h-3 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    <span className="text-gray-700">Compliance with healthcare regulations and safety standards</span>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <svg className="w-3 h-3 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    <span className="text-gray-700">Continuous quality improvement in staffing services</span>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <svg className="w-3 h-3 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    <span className="text-gray-700">Protecting the rights of patients, clients, and staff</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-blue-50 rounded-2xl p-6 mb-8">
+                <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
+                  <span className="text-2xl mr-2">📞</span>
+                  Joint Commission Contact Information for Concerns:
+                </h3>
+                <div className="space-y-2 text-sm text-gray-700">
+                  <div className="flex items-center space-x-2">
+                    <span className="font-semibold">Phone:</span>
+                    <span>(630) 792-5800</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <span className="font-semibold">Fax:</span>
+                    <span>(630) 792-5636</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <span className="font-semibold">Email:</span>
+                    <span>patientsafetyreport@jointcommission.org</span>
+                  </div>
+                  <div className="flex items-start space-x-2">
+                    <span className="font-semibold">Mail:</span>
+                    <span>Office of Quality and Patient Safety, The Joint Commission, One Renaissance Boulevard, Oakbrook Terrace, IL 60181</span>
+                  </div>
+                </div>
+              </div>
+
+              <p className="text-gray-600 leading-relaxed">
+                This accreditation ensures that our partners can trust us to deliver staffing solutions that meet the highest industry standards.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -1073,18 +1205,18 @@ export default function Home() {
             <div>
               <h3 className="font-bold text-xl mb-6 text-white">Company</h3>
               <ul className="space-y-3 text-gray-300">
-                <li><a href="#" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>About Us</a></li>
-                <li><a href="#" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Our Team</a></li>
-                <li><a href="#" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Careers</a></li>
-                <li><a href="#" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Contact</a></li>
+                <li><a href="/about" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>About Us</a></li>
+                <li><a href="/about" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Our Team</a></li>
+                <li><a href="/apply" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Careers</a></li>
+                <li><a href="/contact" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Contact</a></li>
                 <li><a href="#" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>News & Updates</a></li>
               </ul>
             </div>
             <div>
               <h3 className="font-bold text-xl mb-6 text-white">Services</h3>
               <ul className="space-y-3 text-gray-300">
-                <li><a href="#" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Clinical Staffing</a></li>
-                <li><a href="#" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Non-Clinical Staff</a></li>
+                <li><a href="/industries" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Clinical Staffing</a></li>
+                <li><a href="/industries" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Non-Clinical Staff</a></li>
               </ul>
             </div>
             <div>

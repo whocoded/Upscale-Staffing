@@ -184,20 +184,17 @@ export default function About() {
           <div className="bg-white p-8 md:p-12 transform transition-all duration-500 mb-16 -mx-4 md:-mx-8 lg:-mx-16">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-4xl font-bold text-gray-800 mb-6">Our Journey</h2>
+                <h2 className="text-4xl font-bold text-gray-800 mb-6">Who We Are</h2>
                 <div className="space-y-6 text-gray-600 leading-relaxed">
                   <p className="text-lg">
-                    Founded in 2015, Upscale Staffing emerged from a simple yet powerful vision: to bridge the gap between exceptional healthcare professionals and the facilities that need them most.
+                    Upscale Staffing, a division of the Upscale brand, delivers reliable, flexible, and compliant workforce solutions to healthcare and support service organizations. As part of the larger Upscale family, we uphold the same values of excellence, integrity, and community impact.
                   </p>
                   <p>
-                    What started as a small team of healthcare recruitment specialists has grown into a comprehensive workforce solution provider, serving over 150 healthcare facilities across the nation.
+                    We are dedicated to helping facilities maintain consistent, high-quality care by connecting them with pre-vetted professionals who are skilled, dependable, and ready to step in when support is needed most. From hospitals and long-term care facilities to clinics and community programs, we understand that the right staff makes a critical difference in patient outcomes and organizational success.
                   </p>
                   <p>
-                    Our founders, with combined decades of experience in healthcare and human resources, recognized the unique challenges facing the healthcare industry and set out to create innovative solutions.
-                  </p>
-                  <p>
-                    Today, we're proud to have placed over 500 healthcare professionals in positions where they can make a real difference in patient care.
-                  </p>
+                     We bring together talented professionals and the organizations that rely on them. By focusing on coverage, compliance, and peace of mind, we make sure our partners can operate smoothly while patients receive the attentive care they deserve. Upscale Staffing is not just about filling positions, it is about building trusted relationships, strengthening healthcare delivery, and ensuring that every shift is covered with confidence.
+                   </p>
                 </div>
               </div>
               <div className="relative">
@@ -223,14 +220,14 @@ export default function About() {
                 <div className="text-5xl mb-6">🎯</div>
                 <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
                 <p className="text-lg leading-relaxed">
-                  To connect exceptional healthcare professionals with leading medical institutions, ensuring quality patient care through strategic workforce solutions and unwavering commitment to excellence.
+                  Our mission is to connect healthcare and support service organizations with qualified, dependable, and compassionate professionals. We aim to ensure facilities have the coverage and compliance they need to deliver excellent care while giving our workforce meaningful opportunities to grow and serve.
                 </p>
               </div>
               <div className="rounded-3xl p-8 md:p-12 text-white" style={{background: 'linear-gradient(to bottom right, #0d74bb, #0a5d96)'}}>
                 <div className="text-5xl mb-6">🔮</div>
                 <h2 className="text-3xl font-bold mb-6">Our Vision</h2>
                 <p className="text-lg leading-relaxed opacity-90">
-                  To be the most trusted partner in healthcare staffing, transforming the industry through innovative solutions, exceptional service, and a deep commitment to improving patient outcomes.
+                  Our vision is to be the trusted staffing partner of choice for healthcare providers nationwide. We strive to redefine workforce solutions by building long-term relationships, advancing quality standards, and contributing to healthier communities where every patient receives safe, consistent, and dignified care.
                 </p>
               </div>
             </div>
@@ -291,12 +288,12 @@ export default function About() {
             Whether you're a healthcare professional seeking your next opportunity or a facility looking for exceptional talent, we're here to help.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-colors duration-300" style={{color: '#0d74bb'}}>
-              Find Opportunities
-            </button>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold transition-colors duration-300" onMouseEnter={(e) => {e.target.style.backgroundColor = 'white'; e.target.style.color = '#0d74bb';}} onMouseLeave={(e) => {e.target.style.backgroundColor = 'transparent'; e.target.style.color = 'white';}}>
-              Partner With Us
-            </button>
+            <a href="/apply" className="bg-white px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-colors duration-300 inline-block" style={{color: '#0d74bb'}}>
+              Join Our Team
+            </a>
+            <a href="/about" className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold transition-colors duration-300 inline-block" onMouseEnter={(e) => {e.target.style.backgroundColor = 'white'; e.target.style.color = '#0d74bb';}} onMouseLeave={(e) => {e.target.style.backgroundColor = 'transparent'; e.target.style.color = 'white';}}>
+              Our Story
+            </a>
           </div>
         </div>
       </section>
@@ -338,21 +335,18 @@ export default function About() {
             <div>
               <h3 className="font-bold text-xl mb-6 text-white">Company</h3>
               <ul className="space-y-3 text-gray-300">
-                <li><a href="#" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>About Us</a></li>
-                <li><a href="#" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Our Team</a></li>
-                <li><a href="#" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Careers</a></li>
-                <li><a href="#" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Contact</a></li>
-                <li><a href="#" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>News & Updates</a></li>
+                <li><a href="/about" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>About Us</a></li>
+                <li><a href="/about" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Our Team</a></li>
+                <li><a href="/apply" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Careers</a></li>
+                <li><a href="/contact" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Contact</a></li>
+                <li><a href="/about" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>News & Updates</a></li>
               </ul>
             </div>
             <div>
               <h3 className="font-bold text-xl mb-6 text-white">Services</h3>
               <ul className="space-y-3 text-gray-300">
-                <li><a href="#" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Clinical Staffing</a></li>
-                <li><a href="#" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Non-Clinical Staff</a></li>
-                <li><a href="#" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Flexible Coverage</a></li>
-                <li><a href="#" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Workforce Compliance</a></li>
-                <li><a href="#" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Talent Acquisition</a></li>
+                <li><a href="/industries" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Clinical Staffing</a></li>
+                <li><a href="/industries" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Non-Clinical Staff</a></li>
               </ul>
             </div>
             <div>

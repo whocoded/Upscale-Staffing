@@ -53,9 +53,9 @@ export default function Navigation() {
             
             {/* Desktop CTA Button */}
             <div className="hidden md:flex items-center space-x-4">
-              <button className="text-white px-4 py-2 rounded-full text-sm font-medium transition-colors duration-200" style={{backgroundColor: '#0d74bb'}} onMouseEnter={(e) => e.target.style.backgroundColor = '#0a5d96'} onMouseLeave={(e) => e.target.style.backgroundColor = '#0d74bb'}>
+              <a href="/apply" className="text-white px-4 py-2 rounded-full text-sm font-medium transition-colors duration-200 inline-block" style={{backgroundColor: '#0d74bb'}} onMouseEnter={(e) => e.target.style.backgroundColor = '#0a5d96'} onMouseLeave={(e) => e.target.style.backgroundColor = '#0d74bb'}>
                 Get Started
-              </button>
+              </a>
             </div>
             
             {/* Mobile menu button */}
@@ -91,9 +91,9 @@ export default function Navigation() {
               <a href="/apply" className={`block px-3 py-2 text-base font-medium transition-colors duration-200 ${pathname === '/apply' ? 'text-blue-600' : 'text-gray-500'}`} style={pathname === '/apply' ? {color: '#0d74bb'} : {}} onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => pathname === '/apply' ? e.target.style.color = '#0d74bb' : e.target.style.color = ''}>Apply</a>
               <a href="/contact" className={`block px-3 py-2 text-base font-medium transition-colors duration-200 ${pathname === '/contact' ? 'text-blue-600' : 'text-gray-500'}`} style={pathname === '/contact' ? {color: '#0d74bb'} : {}} onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => pathname === '/contact' ? e.target.style.color = '#0d74bb' : e.target.style.color = ''}>Contact Us</a>
               <div className="px-3 py-2">
-                <button className="w-full text-white px-4 py-2 rounded-full text-sm font-medium transition-colors duration-200" style={{backgroundColor: '#0d74bb'}} onMouseEnter={(e) => e.target.style.backgroundColor = '#0a5d96'} onMouseLeave={(e) => e.target.style.backgroundColor = '#0d74bb'}>
+                <a href="/apply" className="w-full text-white px-4 py-2 rounded-full text-sm font-medium transition-colors duration-200 inline-block text-center" style={{backgroundColor: '#0d74bb'}} onMouseEnter={(e) => e.target.style.backgroundColor = '#0a5d96'} onMouseLeave={(e) => e.target.style.backgroundColor = '#0d74bb'}>
                   Get Started
-                </button>
+                </a>
               </div>
             </div>
           </div>
