@@ -117,13 +117,13 @@ export default function Contact() {
             {/* Left Content */}
             <div className="text-left">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-                Professional Healthcare
+                Comprehensive Workforce Solutions 
                 <span className="block" style={{color: '#0d74bb'}}>
-                  Staffing Solution
+                  for Every Industry
                 </span>
               </h1>
               <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed max-w-lg">
-                Connect with our expert team to streamline your healthcare staffing needs with AI-powered matching and 24/7 support while reducing time-to-hire.
+                Connect with our expert team to streamline your  staffing needs with AI-powered matching and 24/7 support while reducing time-to-hire.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
                 <a href="/contact" 
@@ -215,15 +215,14 @@ export default function Contact() {
             <p className="font-semibold mb-2" style={{color: '#0d74bb'}}>Contact us</p>
             <h2 className="text-4xl font-bold text-gray-800 mb-4">Get in Touch with Our Team</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              We're here to answer your questions, discuss your project, and help you find the best solutions for your software needs.
-              Reach out to us, and let's start building something great together.
+              We’re here to answer your questions, discuss your staffing needs, and help you find the right professionals for your organization. Whether you’re seeking qualified healthcare staff or skilled administrative and industrial talent, our team is ready to support you.
             </p>
           </div>
           
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             {/* Contact Form */}
             <div>
-              <h3 className="text-2xl font-bold text-gray-800 mb-8">Let's Talk About Your Project</h3>
+              <h3 className="text-2xl font-bold text-gray-800 mb-8">Let’s Talk About Your Staffing Needs</h3>
               
               {isSubmitted && (
                 <div className="mb-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded-xl">
@@ -416,7 +415,7 @@ export default function Contact() {
                  <img src="/logo.png" alt="Upscale Staffing" className="h-12 w-auto" />
                </div>
               <p className="text-gray-300 mb-6 text-lg leading-relaxed max-w-md">
-                Connecting exceptional healthcare professionals with leading medical institutions. Your trusted partner in building world-class medical teams.
+                Connecting exceptional professionals with organizations that value excellence. Your trusted partner in building high-performing teams across healthcare and beyond.
               </p>
               <div className="flex space-x-4">
                 <div className="w-12 h-12 rounded-2xl flex items-center justify-center hover:shadow-lg transition-all duration-300 cursor-pointer" style={{background: 'linear-gradient(to bottom right, #3b82f6, #0d74bb)'}}>
@@ -445,7 +444,7 @@ export default function Contact() {
               <h3 className="font-bold text-xl mb-6 text-white">Company</h3>
               <ul className="space-y-3 text-gray-300">
                 <li><a href="/about" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>About Us</a></li>
-                <li><a href="/about" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Our Team</a></li>
+                 
                 <li><a href="/apply" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Careers</a></li>
                 <li><a href="/contact" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Contact</a></li>
                 <li><a href="/about" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>News & Updates</a></li>
@@ -456,9 +455,9 @@ export default function Contact() {
               <ul className="space-y-3 text-gray-300">
                 <li><a href="/industries" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Clinical Staffing</a></li>
                 <li><a href="/industries" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Non-Clinical Staff</a></li>
-                <li><a href="/industries" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Flexible Coverage</a></li>
+                {/* <li><a href="/industries" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Flexible Coverage</a></li>
                 <li><a href="/industries" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Workforce Compliance</a></li>
-                <li><a href="/industries" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Talent Acquisition</a></li>
+                <li><a href="/industries" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Talent Acquisition</a></li> */}
               </ul>
             </div>
             <div>
@@ -482,8 +481,8 @@ export default function Contact() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
                   <div>
-                    <span className="block">Upscale Management Solutions</span>
-                    <span className="block">Healthcare Staffing Division</span>
+                    <span className="block">Upscale Staffing</span>
+                    
                     <span className="block">6301 Ivy Lane Suite 512</span>
                 <span className="block">Greenbelt Maryland 20770</span>
                   </div>

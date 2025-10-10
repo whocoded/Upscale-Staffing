@@ -483,7 +483,7 @@ export default function Apply() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               { icon: '💰', title: 'Competitive Pay', desc: 'Top market rates and performance bonuses' },
-              { icon: '🏥', title: 'Premium Facilities', desc: 'Work at leading healthcare institutions' },
+              { icon: '🏥', title: 'Premium Facilities', desc: 'Join leading teams across healthcare, administration, and industry.' },
               { icon: '📚', title: 'Career Growth', desc: 'Continuous learning and development opportunities' },
               { icon: '🤝', title: 'Personal Support', desc: '24/7 support from dedicated recruiters' }
             ].map((benefit, index) => (
@@ -506,7 +506,7 @@ export default function Apply() {
                 <img src="/logo.png" alt="Upscale Staffing" className="h-12 w-auto" />
               </div>
               <p className="text-gray-300 mb-6 text-lg leading-relaxed max-w-md">
-                Connecting exceptional healthcare professionals with leading medical institutions. Your trusted partner in building world-class medical teams.
+                Connecting exceptional professionals with organizations that value excellence. Your trusted partner in building high-performing teams across healthcare and beyond.
               </p>
               <div className="flex space-x-4">
                 <div className="w-12 h-12 rounded-2xl flex items-center justify-center hover:shadow-lg transition-all duration-300 cursor-pointer" style={{background: 'linear-gradient(to bottom right, #3b82f6, #0d74bb)'}}>
@@ -535,7 +535,7 @@ export default function Apply() {
               <h3 className="font-bold text-xl mb-6 text-white">Company</h3>
               <ul className="space-y-3 text-gray-300">
                 <li><a href="/about" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>About Us</a></li>
-                <li><a href="/about" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Our Team</a></li>
+                 
                 <li><a href="/apply" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Careers</a></li>
                 <li><a href="/contact" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Contact</a></li>
                 <li><a href="/about" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>News & Updates</a></li>
@@ -546,9 +546,9 @@ export default function Apply() {
               <ul className="space-y-3 text-gray-300">
                 <li><a href="/industries" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Clinical Staffing</a></li>
                 <li><a href="/industries" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Non-Clinical Staff</a></li>
-                <li><a href="/industries" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Flexible Coverage</a></li>
+                {/* <li><a href="/industries" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Flexible Coverage</a></li>
                 <li><a href="/industries" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Workforce Compliance</a></li>
-                <li><a href="/industries" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Talent Acquisition</a></li>
+                <li><a href="/industries" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Talent Acquisition</a></li> */}
               </ul>
             </div>
             <div>
@@ -572,8 +572,8 @@ export default function Apply() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
                   <div>
-                    <span className="block">Upscale Management Solutions</span>
-                    <span className="block">Healthcare Staffing Division</span>
+                    <span className="block">Upscale Staffing</span>
+                    
                     <span className="block">6301 Ivy Lane Suite 512</span>
                     <span className="block">Greenbelt Maryland 20770</span>
                   </div>

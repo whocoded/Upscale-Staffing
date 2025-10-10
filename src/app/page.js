@@ -135,15 +135,15 @@ export default function Home() {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                 <div className="animate-fadeInLeft">
                   <h1 className="text-6xl font-bold text-gray-900 mb-8 leading-tight animate-fadeInUp">
-                    Reliable, Flexible &
+                    Reliable, Flexible 
                     <span style={{color: '#0d74bb'}} className="block">Workforce Solutions</span>
                   </h1>
                   <p className="text-xl text-gray-600 mb-10 leading-relaxed animate-fadeInUp animate-delay-200">
-                    Upscale Staffing provides pre-vetted healthcare professionals when and where they are needed most. From hospitals to home health agencies, our staffing solutions deliver consistent, high-quality care.
+                    We match great talent across healthcare and non-healthcare sectors with the organizations that depend on them, ensuring reliable staffing, regulatory compliance, and peace of mind. As part of the Upscale Management Services Group, we bring the same standard of excellence to every industry we serve.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-6 animate-fadeInUp animate-delay-400">
                     <a href="/apply" className="text-white px-10 py-4 rounded-full font-bold text-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 inline-block text-center" style={{backgroundColor: '#0d74bb'}} onMouseEnter={(e) => e.target.style.backgroundColor = '#0a5d96'} onMouseLeave={(e) => e.target.style.backgroundColor = '#0d74bb'}>
-                      Start Hiring
+                      Request Staffing
                     </a>
                     <a href="/about" className="border-2 px-10 py-4 rounded-full font-bold text-lg hover:text-white transition-all duration-300 inline-block text-center" style={{borderColor: '#0d74bb', color: '#0d74bb'}} onMouseEnter={(e) => {e.target.style.backgroundColor = '#0d74bb'; e.target.style.color = 'white';}} onMouseLeave={(e) => {e.target.style.backgroundColor = 'transparent'; e.target.style.color = '#0d74bb';}}>
                       Learn More
@@ -233,15 +233,15 @@ export default function Home() {
                     <span style={{color: '#0d74bb'}}> Through People</span>
                   </h1>
                   <p className="text-xl text-gray-600 mb-8 leading-relaxed animate-fadeInUp animate-delay-200">
-                    We match great people with organizations that depend on them, ensuring coverage, compliance, and peace of mind. Part of the trusted Upscale family of companies.
+                    Upscale Staffing provides pre-vetted healthcare professionals when and where they are needed most. From hospitals to home health agencies, our staffing solutions deliver consistent, high-quality care.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4 animate-fadeInUp animate-delay-400">
-                    <button className="text-white px-8 py-4 rounded-full font-semibold shadow-lg" style={{backgroundColor: '#0d74bb'}} onMouseEnter={(e) => e.target.style.backgroundColor = '#0a5d96'} onMouseLeave={(e) => e.target.style.backgroundColor = '#0d74bb'}>
+                    <a href="/apply" className="text-white px-8 py-4 rounded-full font-semibold shadow-lg" style={{backgroundColor: '#0d74bb'}} onMouseEnter={(e) => e.target.style.backgroundColor = '#0a5d96'} onMouseLeave={(e) => e.target.style.backgroundColor = '#0d74bb'}>
                       Find Jobs
-                    </button>
-                    <button className="border-2 px-8 py-4 rounded-full font-semibold" style={{borderColor: '#0d74bb', color: '#0d74bb'}} onMouseEnter={(e) => {e.target.style.backgroundColor = '#f0f9ff';}} onMouseLeave={(e) => {e.target.style.backgroundColor = 'transparent';}}>
-                      Post a Job
-                    </button>
+                    </a>
+                    <a href="/about" className="border-2 px-8 py-4 rounded-full font-semibold" style={{borderColor: '#0d74bb', color: '#0d74bb'}} onMouseEnter={(e) => {e.target.style.backgroundColor = '#f0f9ff';}} onMouseLeave={(e) => {e.target.style.backgroundColor = 'transparent';}}>
+                      Learn More
+                    </a>
                   </div>
                 </div>
                 <div className="relative animate-fadeInRight">
@@ -254,7 +254,7 @@ export default function Home() {
                       </div>
                       <div>
                         <h3 className="text-xl font-bold text-gray-900">Sarah Johnson</h3>
-                        <p className="font-medium" style={{color: '#0d74bb'}}>Senior Developer</p>
+                        <p className="font-medium" style={{color: '#0d74bb'}}>Registered Nurse (RN)</p>
                       </div>
                     </div>
                     <div className="space-y-4">
@@ -264,7 +264,7 @@ export default function Home() {
                       </div>
                       <div className="flex items-center justify-between py-2">
                         <span className="text-gray-600 font-medium">Skills</span>
-                        <span className="font-bold text-gray-900">React, Node.js</span>
+                        <span className="font-bold text-gray-900">ICU, Med-Surg</span>
                       </div>
                       <div className="flex items-center justify-between py-2">
                         <span className="text-gray-600 font-medium">Location</span>
@@ -281,7 +281,7 @@ export default function Home() {
                       </div>
                       <div>
                         <p className="font-semibold text-gray-900 text-sm">Mike Chen</p>
-                        <p className="text-gray-500 text-xs">UI Designer</p>
+                        <p className="text-gray-500 text-xs">Staffing Specialist</p>
                       </div>
                     </div>
                   </div>
@@ -294,7 +294,7 @@ export default function Home() {
                       </div>
                       <div>
                         <p className="font-semibold text-gray-900 text-sm">Lisa Park</p>
-                        <p className="text-gray-500 text-xs">Product Manager</p>
+                        <p className="text-gray-500 text-xs">Staffing Coordinator</p>
                       </div>
                     </div>
                   </div>
@@ -435,7 +435,7 @@ export default function Home() {
                   Learn More About Us
                 </a>
                 <a href="/about" className="border-2 border-gray-400 text-gray-300 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-gray-900 transition-all duration-300 text-center">
-                  Meet Our Team
+                  Contact Us
                 </a>
               </div>
               {/* Company Values */}
@@ -617,6 +617,100 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Services Section */}
+      <section className="py-24 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+
+            <h2 className="text-5xl font-bold text-gray-900 mt-4 mb-6 animate-fadeInUp animate-delay-200">
+              Comprehensive Healthcare
+              <span className="block" style={{color: '#0d74bb'}}>Staffing Solutions</span>
+            </h2>
+            <div className="flex justify-end">
+              {/* <button className="text-white px-6 py-3 rounded-full text-sm font-medium transition-colors animate-fadeInUp animate-delay-400" style={{backgroundColor: '#0d74bb'}} onMouseEnter={(e) => e.target.style.backgroundColor = '#1e40af'} onMouseLeave={(e) => e.target.style.backgroundColor = '#0d74bb'}>
+                See All Services
+              </button> */}
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
+            {/* Clinical Staffing */}
+            <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 animate-fadeInUp animate-delay-600">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Clinical Staffing</h3>
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                Connecting healthcare facilities with qualified nurses, physicians, and clinical specialists to ensure optimal patient care and operational efficiency.
+              </p>
+              <a href="/industries" className="font-semibold transition-colors inline-flex items-center" style={{color: '#0d74bb'}} onMouseEnter={(e) => e.target.style.color = '#1e40af'} onMouseLeave={(e) => e.target.style.color = '#0d74bb'}>
+                  Learn More
+                  <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
+              <div className="mt-6 relative">
+                <div className="bg-gradient-to-br from-green-200 to-green-300 rounded-2xl p-6 h-48 flex items-center justify-center overflow-hidden">
+                  <div className="w-full h-full bg-gradient-to-br from-green-300/50 to-green-400/50 rounded-xl flex items-center justify-center">
+                    <div className="grid grid-cols-2 gap-2 w-full h-full p-4">
+                      <div className="bg-white/80 rounded-lg flex items-center justify-center">
+                        <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                      </div>
+                      <div className="bg-white/60 rounded-lg"></div>
+                      <div className="bg-white/60 rounded-lg"></div>
+                      <div className="bg-white/80 rounded-lg flex items-center justify-center">
+                        <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Non-Clinical & Administrative */}
+            <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 animate-fadeInUp animate-delay-700">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Non-Clinical & Administrative Staffing</h3>
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                Providing skilled professionals across diverse non-healthcare sectors to strengthen operations, boost productivity, and support business efficiency across every industry we serve.
+              </p>
+              <a href="/industries" className="font-semibold transition-colors inline-flex items-center" style={{color: '#0d74bb'}} onMouseEnter={(e) => e.target.style.color = '#1e40af'} onMouseLeave={(e) => e.target.style.color = '#0d74bb'}>
+                Learn More
+                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
+              <div className="mt-6 relative">
+                <div className="bg-gradient-to-br from-blue-200 to-blue-300 rounded-2xl p-6 h-48 flex items-center justify-center overflow-hidden">
+                  <div className="w-full h-full bg-gradient-to-br from-blue-300/50 to-blue-400/50 rounded-xl flex items-center justify-center">
+                    <div className="grid grid-cols-3 gap-2 w-full h-full p-4">
+                      <div className="bg-white/80 rounded-lg flex items-center justify-center">
+                        <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                        </svg>
+                      </div>
+                      <div className="bg-white/60 rounded-lg"></div>
+                      <div className="bg-white/80 rounded-lg flex items-center justify-center">
+                        <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                      </div>
+                      <div className="bg-white/60 rounded-lg col-span-3"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+          </div>
+        </div>
+      </section>
+
       {/* About Us Section */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -672,7 +766,7 @@ export default function Home() {
             {/* Right Side - Content */}
             <div className="animate-fadeInRight">
               <div className="mb-8">
-                <span className="font-semibold text-lg animate-fadeInUp" style={{color: '#0d74bb'}}>/ who we are /</span>
+                {/* <span className="font-semibold text-lg animate-fadeInUp" style={{color: '#0d74bb'}}>/ who we are /</span> */}
                 <h2 className="text-5xl font-bold text-gray-900 mt-4 mb-6 animate-fadeInUp animate-delay-200">
                   Upscale Staffing
                   <span className="block" style={{color: '#0d74bb'}}>Healthcare Recruitment Excellence</span>
@@ -734,101 +828,171 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services Section */}
-      <section className="py-24 bg-gray-50">
+      
+
+      
+
+        {/* SMS Marketing Style Section */}
+      <section className="bg-gray-900 text-white py-20 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-
-            <h2 className="text-5xl font-bold text-gray-900 mt-4 mb-6 animate-fadeInUp animate-delay-200">
-              Comprehensive Healthcare
-              <span className="block" style={{color: '#0d74bb'}}>Staffing Solutions</span>
-            </h2>
-            <div className="flex justify-end">
-              <button className="text-white px-6 py-3 rounded-full text-sm font-medium transition-colors animate-fadeInUp animate-delay-400" style={{backgroundColor: '#0d74bb'}} onMouseEnter={(e) => e.target.style.backgroundColor = '#1e40af'} onMouseLeave={(e) => e.target.style.backgroundColor = '#0d74bb'}>
-                See All Services
-              </button>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
-            {/* Clinical Staffing */}
-            <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 animate-fadeInUp animate-delay-600">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Clinical Staffing</h3>
-              <p className="text-gray-600 mb-6 leading-relaxed">
-                Connecting healthcare facilities with qualified nurses, physicians, and clinical specialists to ensure optimal patient care and operational efficiency.
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Left Content */}
+            <div className="animate-fadeInLeft">
+              <h2 className="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+                Administrative & Non-Healthcare Staffing That Drives Efficiency
+              </h2>
+              <p className="text-lg text-gray-300 mb-8 leading-relaxed">
+                Upscale Staffing isn’t just for healthcare.We also provide reliable professionals across administrative, corporate, and light-industrial roles. From front-desk coordinators and HR assistants to warehouse support and customer service teams, we help organizations maintain productivity with qualified, pre-screened talent.
               </p>
-              <a href="/industries" className="font-semibold transition-colors inline-flex items-center" style={{color: '#0d74bb'}} onMouseEnter={(e) => e.target.style.color = '#1e40af'} onMouseLeave={(e) => e.target.style.color = '#0d74bb'}>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a
+                  href="/industries"
+                  className="px-8 py-4 rounded-full font-semibold text-white transition-all duration-300 shadow-lg transform hover:scale-105 inline-block"
+                  style={{backgroundColor: '#0d74bb'}}
+                  onMouseEnter={(e) => e.target.style.backgroundColor = '#1e40af'}
+                  onMouseLeave={(e) => e.target.style.backgroundColor = '#0d74bb'}
+                >
                   Learn More
-                  <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
                 </a>
-              <div className="mt-6 relative">
-                <div className="bg-gradient-to-br from-green-200 to-green-300 rounded-2xl p-6 h-48 flex items-center justify-center overflow-hidden">
-                  <div className="w-full h-full bg-gradient-to-br from-green-300/50 to-green-400/50 rounded-xl flex items-center justify-center">
-                    <div className="grid grid-cols-2 gap-2 w-full h-full p-4">
-                      <div className="bg-white/80 rounded-lg flex items-center justify-center">
-                        <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                        </svg>
-                      </div>
-                      <div className="bg-white/60 rounded-lg"></div>
-                      <div className="bg-white/60 rounded-lg"></div>
-                      <div className="bg-white/80 rounded-lg flex items-center justify-center">
-                        <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <a href="/apply" className="px-8 py-4 border-2 border-white text-white rounded-full font-semibold hover:bg-white hover:text-gray-900 transition-all duration-300">
+                  Apply Now
+                </a>
               </div>
             </div>
 
-            {/* Non-Clinical & Administrative */}
-            <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 animate-fadeInUp animate-delay-700">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Non-Clinical & Administrative</h3>
-              <p className="text-gray-600 mb-6 leading-relaxed">
-                Providing skilled administrative and support staff to streamline operations and enhance the overall efficiency of healthcare organizations.
-              </p>
-              <a href="/industries" className="font-semibold transition-colors inline-flex items-center" style={{color: '#0d74bb'}} onMouseEnter={(e) => e.target.style.color = '#1e40af'} onMouseLeave={(e) => e.target.style.color = '#0d74bb'}>
-                Learn More
-                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </a>
-              <div className="mt-6 relative">
-                <div className="bg-gradient-to-br from-blue-200 to-blue-300 rounded-2xl p-6 h-48 flex items-center justify-center overflow-hidden">
-                  <div className="w-full h-full bg-gradient-to-br from-blue-300/50 to-blue-400/50 rounded-xl flex items-center justify-center">
-                    <div className="grid grid-cols-3 gap-2 w-full h-full p-4">
-                      <div className="bg-white/80 rounded-lg flex items-center justify-center">
-                        <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                        </svg>
-                      </div>
-                      <div className="bg-white/60 rounded-lg"></div>
-                      <div className="bg-white/80 rounded-lg flex items-center justify-center">
-                        <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                        </svg>
-                      </div>
-                      <div className="bg-white/60 rounded-lg col-span-3"></div>
-                    </div>
+            {/* Right Content - Image Area */}
+            <div className="relative animate-fadeInRight">
+              <div className="relative bg-gradient-to-br from-gray-100 to-gray-200 rounded-3xl p-4 shadow-2xl">
+                {/* Notification Badge */}
+                <div className="absolute top-4 right-4 bg-gray-800 text-white px-4 py-2 rounded-lg shadow-lg">
+                  <div className="flex items-center space-x-2">
+                    <div className="w-3 h-3 rounded-full" style={{backgroundColor: '#0d74bb'}}></div>
+                    <span className="text-sm font-medium">HEALTHCARE JOBS</span>
                   </div>
+                  <p className="text-xs text-gray-300 mt-1">
+                    New opportunities! 🏥 Premium positions available
+                    <span className="block" style={{color: '#0d74bb'}}>Apply now</span>
+                  </p>
+                </div>
+
+                {/* Main Image Placeholder (replaced with relevant image) */}
+                <div className="w-full h-80 bg-gradient-to-br from-blue-100 to-white rounded-2xl relative overflow-hidden">
+                  <img 
+                    src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" 
+                    alt="Healthcare professionals collaborating in a hospital" 
+                    className="w-full h-full object-cover rounded-2xl"
+                  />
+                </div>
+
+                {/* Chat Bubble */}
+                <div className="absolute bottom-4 left-4 bg-white rounded-2xl p-4 shadow-lg max-w-xs">
+                  <div className="flex items-center space-x-2 mb-2">
+                    <div className="w-8 h-8 rounded-full flex items-center justify-center" style={{backgroundColor: '#0d74bb'}}>
+                      <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                      </svg>
+                    </div>
+                    <span className="text-sm font-medium text-gray-800">Upscale Staffing</span>
+                  </div>
+                  <p className="text-sm text-gray-600">
+                    Perfect match found! New RN position at top-rated facility. 
+                    <span className="font-semibold" style={{color: '#0d74bb'}}>Apply today!</span>
+                  </p>
                 </div>
               </div>
             </div>
-
-
-
-
-
-
           </div>
         </div>
       </section>
 
-      {/* JCAHO Accreditation Section */}
+    
+
+    
+
+      {/* Testimonials */}
+      <section className="py-24" style={{background: 'linear-gradient(to bottom right, #f0f9ff, #e0f2fe)'}}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-20 animate-fadeInUp">
+            <h2 className="text-5xl font-bold text-gray-900 mb-6">Proven Results, Trusted Reviews</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              Discover how our clients have transformed their hiring process and achieved remarkable results
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 animate-fadeInUp animate-delay-200">
+              <div className="flex items-center mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-100 to-blue-200 rounded-2xl mr-4 flex items-center justify-center">
+                  <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 className="font-bold text-gray-900 text-lg">Director of Nursing</h4>
+                  <p className="text-blue-600 font-semibold text-sm">Assisted Living Facility</p>
+                </div>
+              </div>
+              <div className="mb-4">
+                <div className="flex text-yellow-400 mb-3">
+                  {[...Array(5)].map((_, i) => (
+                    <svg key={i} className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                  ))}
+                </div>
+              </div>
+              <p className="text-gray-600 leading-relaxed">"Upscale provided us with highly qualified nurses and caregivers right when we needed them most. Their team is reliable, responsive, and always goes above and beyond to ensure patients receive quality care. We've built a lasting partnership we can trust."</p>
+            </div>
+            <div className="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 animate-fadeInUp animate-delay-400">
+              <div className="flex items-center mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-green-100 to-green-200 rounded-2xl mr-4 flex items-center justify-center">
+                  <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 className="font-bold text-gray-900 text-lg">Director of Nursing</h4>
+                  <p className="text-green-600 font-semibold text-sm">Assisted Living Facility</p>
+                </div>
+              </div>
+              <div className="mb-4">
+                <div className="flex text-yellow-400 mb-3">
+                  {[...Array(5)].map((_, i) => (
+                    <svg key={i} className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                  ))}
+                </div>
+              </div>
+              <p className="text-gray-600 leading-relaxed">"Upscale provided us with highly qualified nurses and caregivers right when we needed them most. Their team is reliable, responsive, and always goes above and beyond to ensure patients receive quality care. We've built a lasting partnership we can trust."</p>
+            </div>
+            <div className="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 animate-fadeInUp animate-delay-600">
+              <div className="flex items-center mb-6">
+                <div className="w-16 h-16 rounded-2xl mr-4 flex items-center justify-center" style={{background: 'linear-gradient(to bottom right, #e6f3ff, #cce7ff)'}}>
+                  <svg className="w-8 h-8" style={{color: '#0d74bb'}} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 className="font-bold text-gray-900 text-lg">Operations Manager</h4>
+                  <p className="font-semibold text-sm" style={{color: '#0d74bb'}}>Long-Term Care Facility</p>
+                </div>
+              </div>
+              <div className="mb-4">
+                <div className="flex text-yellow-400 mb-3">
+                  {[...Array(5)].map((_, i) => (
+                    <svg key={i} className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                  ))}
+                </div>
+              </div>
+              <p className="text-gray-600 leading-relaxed">"The staffing support we received for our maintenance and dietary departments has been excellent. Upscale quickly understood our needs and sent dependable staff who blended seamlessly with our team. It saved us time and stress."</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+        {/* JCAHO Accreditation Section */}
       <section className="py-24 bg-white relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -960,170 +1124,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SMS Marketing Style Section */}
-      <section className="bg-gray-900 text-white py-20 relative overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Left Content */}
-            <div className="animate-fadeInLeft">
-              <h2 className="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-                Healthcare staffing that gets results fast.
-              </h2>
-              <p className="text-lg text-gray-300 mb-8 leading-relaxed">
-                Connect with top healthcare professionals through our proven recruitment channels. 
-                We place qualified candidates where they're needed most: hospitals, clinics, 
-                long-term care facilities, and specialized healthcare settings.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <button 
-                  className="px-8 py-4 rounded-full font-semibold text-white transition-all duration-300 shadow-lg transform hover:scale-105"
-                  style={{backgroundColor: '#0d74bb'}}
-                  onMouseEnter={(e) => e.target.style.backgroundColor = '#1e40af'}
-                  onMouseLeave={(e) => e.target.style.backgroundColor = '#0d74bb'}
-                >
-                  Start recruiting
-                </button>
-                <button className="px-8 py-4 border-2 border-white text-white rounded-full font-semibold hover:bg-white hover:text-gray-900 transition-all duration-300">
-                  Contact our team
-                </button>
-              </div>
-            </div>
-
-            {/* Right Content - Image Area */}
-            <div className="relative animate-fadeInRight">
-              <div className="relative bg-gradient-to-br from-gray-100 to-gray-200 rounded-3xl p-8 shadow-2xl">
-                {/* Notification Badge */}
-                <div className="absolute top-4 right-4 bg-gray-800 text-white px-4 py-2 rounded-lg shadow-lg">
-                  <div className="flex items-center space-x-2">
-                    <div className="w-3 h-3 rounded-full" style={{backgroundColor: '#0d74bb'}}></div>
-                    <span className="text-sm font-medium">HEALTHCARE JOBS</span>
-                  </div>
-                  <p className="text-xs text-gray-300 mt-1">
-                    New opportunities! 🏥 Premium positions available
-                    <span className="block" style={{color: '#0d74bb'}}>Apply now</span>
-                  </p>
-                </div>
-
-                {/* Main Image Placeholder */}
-                <div className="w-full h-80 bg-gradient-to-br from-blue-100 to-white rounded-2xl flex items-center justify-center relative overflow-hidden">
-                  <div className="absolute inset-0 opacity-20">
-                    <img src="/logo.png" alt="Healthcare Professional" className="w-full h-full object-contain" />
-                  </div>
-                  <div className="relative z-10 text-center">
-                    <div className="w-24 h-24 bg-white rounded-full mx-auto mb-4 flex items-center justify-center shadow-lg">
-                      <svg className="w-12 h-12" style={{color: '#0d74bb'}} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                      </svg>
-                    </div>
-                    <p className="text-gray-700 font-semibold">Healthcare Professional</p>
-                    <p className="text-gray-500 text-sm">Ready for new opportunities</p>
-                  </div>
-                </div>
-
-                {/* Chat Bubble */}
-                <div className="absolute bottom-4 left-4 bg-white rounded-2xl p-4 shadow-lg max-w-xs">
-                  <div className="flex items-center space-x-2 mb-2">
-                    <div className="w-8 h-8 rounded-full flex items-center justify-center" style={{backgroundColor: '#0d74bb'}}>
-                      <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                      </svg>
-                    </div>
-                    <span className="text-sm font-medium text-gray-800">Upscale Staffing</span>
-                  </div>
-                  <p className="text-sm text-gray-600">
-                    Perfect match found! New RN position at top-rated facility. 
-                    <span className="font-semibold" style={{color: '#0d74bb'}}>Apply today!</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section className="py-24" style={{background: 'linear-gradient(to bottom right, #f0f9ff, #e0f2fe)'}}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-20 animate-fadeInUp">
-            <h2 className="text-5xl font-bold text-gray-900 mb-6">Proven Results, Trusted Reviews</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Discover how our clients have transformed their hiring process and achieved remarkable results
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 animate-fadeInUp animate-delay-200">
-              <div className="flex items-center mb-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-blue-100 to-blue-200 rounded-2xl mr-4 flex items-center justify-center">
-                  <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                  </svg>
-                </div>
-                <div>
-                  <h4 className="font-bold text-gray-900 text-lg">Director of Nursing</h4>
-                  <p className="text-blue-600 font-semibold text-sm">Assisted Living Facility</p>
-                </div>
-              </div>
-              <div className="mb-4">
-                <div className="flex text-yellow-400 mb-3">
-                  {[...Array(5)].map((_, i) => (
-                    <svg key={i} className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  ))}
-                </div>
-              </div>
-              <p className="text-gray-600 leading-relaxed">"Upscale provided us with highly qualified nurses and caregivers right when we needed them most. Their team is reliable, responsive, and always goes above and beyond to ensure patients receive quality care. We've built a lasting partnership we can trust."</p>
-            </div>
-            <div className="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 animate-fadeInUp animate-delay-400">
-              <div className="flex items-center mb-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-green-100 to-green-200 rounded-2xl mr-4 flex items-center justify-center">
-                  <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                  </svg>
-                </div>
-                <div>
-                  <h4 className="font-bold text-gray-900 text-lg">Director of Nursing</h4>
-                  <p className="text-green-600 font-semibold text-sm">Assisted Living Facility</p>
-                </div>
-              </div>
-              <div className="mb-4">
-                <div className="flex text-yellow-400 mb-3">
-                  {[...Array(5)].map((_, i) => (
-                    <svg key={i} className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  ))}
-                </div>
-              </div>
-              <p className="text-gray-600 leading-relaxed">"Upscale provided us with highly qualified nurses and caregivers right when we needed them most. Their team is reliable, responsive, and always goes above and beyond to ensure patients receive quality care. We've built a lasting partnership we can trust."</p>
-            </div>
-            <div className="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 animate-fadeInUp animate-delay-600">
-              <div className="flex items-center mb-6">
-                <div className="w-16 h-16 rounded-2xl mr-4 flex items-center justify-center" style={{background: 'linear-gradient(to bottom right, #e6f3ff, #cce7ff)'}}>
-                  <svg className="w-8 h-8" style={{color: '#0d74bb'}} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                  </svg>
-                </div>
-                <div>
-                  <h4 className="font-bold text-gray-900 text-lg">Operations Manager</h4>
-                  <p className="font-semibold text-sm" style={{color: '#0d74bb'}}>Long-Term Care Facility</p>
-                </div>
-              </div>
-              <div className="mb-4">
-                <div className="flex text-yellow-400 mb-3">
-                  {[...Array(5)].map((_, i) => (
-                    <svg key={i} className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  ))}
-                </div>
-              </div>
-              <p className="text-gray-600 leading-relaxed">"The staffing support we received for our maintenance and dietary departments has been excellent. Upscale quickly understood our needs and sent dependable staff who blended seamlessly with our team. It saved us time and stress."</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="py-24 relative overflow-hidden" style={{background: 'linear-gradient(to bottom right, #0d74bb, #0a5d96, #4f46e5)'}}>
         <div className="absolute inset-0 bg-black opacity-10"></div>
@@ -1138,12 +1138,12 @@ export default function Home() {
             Join thousands of healthcare professionals who have found their dream positions through our trusted placement services
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-fadeInUp animate-delay-400">
-            <button className="bg-white px-12 py-4 rounded-full font-bold text-lg hover:bg-gray-100 hover:shadow-xl transition-all duration-300 transform hover:scale-105" style={{color: '#0d74bb'}}>
+            <a href="/industries" className="bg-white px-12 py-4 rounded-full font-bold text-lg hover:bg-gray-100 hover:shadow-xl transition-all duration-300 transform hover:scale-105" style={{color: '#0d74bb'}}>
               Browse Jobs
-            </button>
-            <button className="border-2 border-white text-white px-12 py-4 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-105" onMouseEnter={(e) => {e.target.style.backgroundColor = 'white'; e.target.style.color = '#0d74bb';}} onMouseLeave={(e) => {e.target.style.backgroundColor = 'transparent'; e.target.style.color = 'white';}}>
+            </a>
+            <a href="/apply" className="border-2 border-white text-white px-12 py-4 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-105 inline-block text-center" onMouseEnter={(e) => {e.target.style.backgroundColor = 'white'; e.target.style.color = '#0d74bb';}} onMouseLeave={(e) => {e.target.style.backgroundColor = 'transparent'; e.target.style.color = 'white';}}>
               Apply Now
-            </button>
+            </a>
           </div>
           <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center animate-fadeInUp animate-delay-600">
             <div>
@@ -1177,7 +1177,7 @@ export default function Home() {
                 <img src="/logo.png" alt="Upscale Staffing" className="h-12 w-auto" />
               </div>
               <p className="text-gray-300 mb-6 text-lg leading-relaxed max-w-md">
-                Connecting exceptional healthcare professionals with leading medical institutions. Your trusted partner in building world-class medical teams.
+                Connecting exceptional professionals with organizations that value excellence. Your trusted partner in building high-performing teams across healthcare and beyond.
               </p>
               <div className="flex space-x-4">
                 <div className="w-12 h-12 rounded-2xl flex items-center justify-center hover:shadow-lg transition-all duration-300 cursor-pointer" style={{background: 'linear-gradient(to bottom right, #3b82f6, #0d74bb)'}}>
@@ -1206,10 +1206,11 @@ export default function Home() {
               <h3 className="font-bold text-xl mb-6 text-white">Company</h3>
               <ul className="space-y-3 text-gray-300">
                 <li><a href="/about" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>About Us</a></li>
-                <li><a href="/about" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Our Team</a></li>
+                 
                 <li><a href="/apply" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Careers</a></li>
                 <li><a href="/contact" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Contact</a></li>
-                <li><a href="#" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>News & Updates</a></li>
+                <li><a href="/about" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>News & Updates</a></li>
+                
               </ul>
             </div>
             <div>
@@ -1240,8 +1241,8 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
                   <div>
-                    <span className="block">Upscale Management Solutions</span>
-                    <span className="block">Healthcare Staffing Division</span>
+                    <span className="block">Upscale Staffing</span>
+                    
                     <span className="block">6301 Ivy Lane Suite 512</span>
                     <span className="block">Greenbelt Maryland 20770</span>
                   </div>

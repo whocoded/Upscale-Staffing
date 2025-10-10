@@ -77,14 +77,15 @@ export default function About() {
                 At Upscale Staffing, we bridge the gap between exceptional healthcare professionals and the facilities that need them most.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
-                <button 
-                  className="px-8 py-4 rounded-full font-semibold text-white transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
+                <a 
+                  href="/apply"
+                  className="px-8 py-4 rounded-full font-semibold text-white transition-all duration-300 transform hover:scale-105 hover:shadow-lg inline-block"
                   style={{background: '#0d74bb'}}
                   onMouseEnter={(e) => e.target.style.background = '#0a5d96'}
                   onMouseLeave={(e) => e.target.style.background = '#0d74bb'}
                 >
                   Join Our Team
-                </button>
+                </a>
                 <button className="px-8 py-4 rounded-full font-semibold text-white border-2 border-gray-400 hover:border-white transition-all duration-300 underline">
                   Our Story
                 </button>
@@ -187,7 +188,7 @@ export default function About() {
                 <h2 className="text-4xl font-bold text-gray-800 mb-6">Who We Are</h2>
                 <div className="space-y-6 text-gray-600 leading-relaxed">
                   <p className="text-lg">
-                    Upscale Staffing, a division of the Upscale brand, delivers reliable, flexible, and compliant workforce solutions to healthcare and support service organizations. As part of the larger Upscale family, we uphold the same values of excellence, integrity, and community impact.
+                    Upscale Staffing, a division of the Upscale Management Services group, delivers reliable, flexible, and compliant workforce solutions to healthcare systems and support service organizations. As part of the larger Upscale family, we uphold the same values of excellence, integrity, and community impact.
                   </p>
                   <p>
                     We are dedicated to helping facilities maintain consistent, high-quality care by connecting them with pre-vetted professionals who are skilled, dependable, and ready to step in when support is needed most. From hospitals and long-term care facilities to clinics and community programs, we understand that the right staff makes a critical difference in patient outcomes and organizational success.
@@ -255,7 +256,7 @@ export default function About() {
       </section>
 
       {/* Leadership Team Section */}
-      <section className="px-4 pb-20">
+      {/* <section className="px-4 pb-20">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-800 mb-4">Meet Our Leadership Team</h2>
@@ -278,21 +279,21 @@ export default function About() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Call to Action */}
       <section className="py-20 px-4" style={{background: 'linear-gradient(to right, #2563eb, #0d74bb)'}}>
         <div className="max-w-4xl mx-auto text-center text-white">
           <h2 className="text-4xl font-bold mb-6">Ready to Join Our Mission?</h2>
           <p className="text-xl mb-8 opacity-90">
-            Whether you're a healthcare professional seeking your next opportunity or a facility looking for exceptional talent, we're here to help.
+            Whether you’re a healthcare professional seeking your next opportunity or a business looking for skilled administrative or non-clinical talent, Upscale Staffing is here to help. We provide dependable staffing solutions across healthcare and non-healthcare sectors, connecting great people with organizations that rely on them every day.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="/apply" className="bg-white px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-colors duration-300 inline-block" style={{color: '#0d74bb'}}>
-              Join Our Team
+              Apply Now 
             </a>
             <a href="/about" className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold transition-colors duration-300 inline-block" onMouseEnter={(e) => {e.target.style.backgroundColor = 'white'; e.target.style.color = '#0d74bb';}} onMouseLeave={(e) => {e.target.style.backgroundColor = 'transparent'; e.target.style.color = 'white';}}>
-              Our Story
+              Learn More
             </a>
           </div>
         </div>
@@ -307,7 +308,7 @@ export default function About() {
                 <img src="/logo.png" alt="Upscale Staffing" className="h-12 w-auto" />
               </div>
               <p className="text-gray-300 mb-6 text-lg leading-relaxed max-w-md">
-                Connecting exceptional healthcare professionals with leading medical institutions. Your trusted partner in building world-class medical teams.
+                Connecting exceptional professionals with organizations that value excellence. Your trusted partner in building high-performing teams across healthcare and beyond.
               </p>
               <div className="flex space-x-4">
                 <div className="w-12 h-12 rounded-2xl flex items-center justify-center hover:shadow-lg transition-all duration-300 cursor-pointer" style={{background: 'linear-gradient(to bottom right, #3b82f6, #0d74bb)'}}>
@@ -336,7 +337,7 @@ export default function About() {
               <h3 className="font-bold text-xl mb-6 text-white">Company</h3>
               <ul className="space-y-3 text-gray-300">
                 <li><a href="/about" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>About Us</a></li>
-                <li><a href="/about" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Our Team</a></li>
+                 
                 <li><a href="/apply" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Careers</a></li>
                 <li><a href="/contact" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Contact</a></li>
                 <li><a href="/about" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>News & Updates</a></li>
@@ -370,8 +371,8 @@ export default function About() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
                   <div>
-                    <span className="block">Upscale Management Solutions</span>
-                    <span className="block">Healthcare Staffing Division</span>
+                    <span className="block">Upscale Staffing</span>
+                    
                     <span className="block">6301 Ivy Lane Suite 512</span>
                 <span className="block">Greenbelt Maryland 20770</span>
                   </div>

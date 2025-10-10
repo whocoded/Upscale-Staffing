@@ -203,6 +203,46 @@ export default function Industries() {
     { category: 'Specialized', roles: ['Pharmacists', 'Social Workers', 'Dietitians', 'Speech Therapists', 'Mental Health Counselors'] }
   ];
 
+  // Non-Healthcare sectors table data (from screenshot)
+  const nonHealthcareSectors = [
+    {
+      id: 'admin-office',
+      title: 'Administrative & Office Support',
+      description: 'Office Managers, Data Entry, Executive Assistants',
+      stats: { businessClients: '10+', placements: '25+' }
+    },
+    {
+      id: 'customer-service',
+      title: 'Customer Service & Call Centers',
+      description: 'Help Desk, Client Support, Dispatch',
+      stats: { businessClients: '8+', placements: '20+' }
+    },
+    {
+      id: 'finance-accounting',
+      title: 'Finance & Accounting',
+      description: 'Billing, Payroll, Bookkeeping',
+      stats: { businessClients: '6+', placements: '15+' }
+    },
+    {
+      id: 'information-technology',
+      title: 'Information Technology',
+      description: 'IT Support, Data Analysis, Systems Monitoring',
+      stats: { businessClients: '5+', placements: '10+' }
+    },
+    {
+      id: 'hospitality-events',
+      title: 'Hospitality & Events',
+      description: 'Housekeeping, Event Staff, Food Service',
+      stats: { businessClients: '7+', placements: '18+' }
+    },
+    {
+      id: 'light-industrial',
+      title: 'Light Industrial & Warehouse',
+      description: 'Assembly, Packaging, Inventory',
+      stats: { businessClients: '9+', placements: '22+' }
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50">
       <style dangerouslySetInnerHTML={{ __html: animationStyles }} />
@@ -218,13 +258,13 @@ export default function Industries() {
             {/* Left Content */}
             <div className="text-left">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-                Healthcare Industries
-                <span className="block" style={{color: '#0d74bb'}}>
-                  Staffing Solution
+                Comprehensive Staffing  {" "}
+                <span className="inline" style={{color: '#0d74bb'}}>
+                   Solutions
                 </span>
               </h1>
               <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed max-w-lg">
-                Comprehensive staffing solutions across diverse healthcare sectors with specialized expertise and rapid deployment capabilities.
+                Dynamic, end-to-end staffing solutions across healthcare and non-healthcare sectors, combining industry expertise, flexible placement options, and rapid deployment to meet workforce demands.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
                 <a href="/industries" 
@@ -659,8 +699,132 @@ export default function Industries() {
         </section>
       )}
 
+      {/* Non-Healthcare Sectors Table */}
+      <section className="py-20 px-4">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-800 mb-4">Non-Healthcare Sectors We Serve</h2>
+            <p className="text-xl text-gray-600">Administrative and commercial staffing solutions for business clients</p>
+          </div>
+
+          <div className="bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-100">
+            <div className="hidden lg:block bg-gradient-to-r from-slate-800 via-slate-700 to-slate-800 px-8 py-6">
+              <div className="grid grid-cols-10 gap-4 items-center text-white font-semibold">
+                <div className="col-span-4">
+                  <span className="text-sm uppercase tracking-wider">Non-Healthcare Sector</span>
+                </div>
+                <div className="col-span-4">
+                  <span className="text-sm uppercase tracking-wider">Description</span>
+                </div>
+                <div className="col-span-1 text-center">
+                  <span className="text-sm uppercase tracking-wider">Business Clients</span>
+                </div>
+                <div className="col-span-1 text-center">
+                  <span className="text-sm uppercase tracking-wider">Placements</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="divide-y divide-gray-100">
+              {nonHealthcareSectors.map((sector) => (
+                <div key={sector.id} className="group hover:bg-gradient-to-r hover:from-blue-50 hover:to-indigo-50 hover:shadow-lg transition-all duration-300">
+                  <div className="hidden lg:grid lg:grid-cols-10 gap-4 items-center px-8 py-6">
+                    <div className="col-span-4">
+                      <h3 className="text-xl font-bold text-gray-800 mb-1 group-hover:text-blue-700 transition-colors duration-300">{sector.title}</h3>
+                    </div>
+                    <div className="col-span-4">
+                      <p className="text-gray-600 text-sm leading-relaxed group-hover:text-gray-700 transition-colors duration-300">{sector.description}</p>
+                    </div>
+                    <div className="col-span-1 text-center">
+                      <div className="bg-gradient-to-br from-indigo-500 to-indigo-600 text-white rounded-xl px-4 py-3 shadow-md">
+                        <div className="text-2xl font-bold">{sector.stats.businessClients}</div>
+                        <div className="text-xs opacity-90">Business Clients</div>
+                      </div>
+                    </div>
+                    <div className="col-span-1 text-center">
+                      <div className="bg-gradient-to-br from-green-500 to-green-600 text-white rounded-xl px-4 py-3 shadow-md">
+                        <div className="text-2xl font-bold">{sector.stats.placements}</div>
+                        <div className="text-xs opacity-90">Placements</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="lg:hidden p-6 space-y-4">
+                    <div>
+                      <h3 className="text-lg font-bold text-gray-800 mb-2">{sector.title}</h3>
+                      <p className="text-gray-600 text-sm">{sector.description}</p>
+                    </div>
+                    <div className="flex gap-3">
+                      <div className="bg-gradient-to-br from-indigo-500 to-indigo-600 text-white rounded-lg px-3 py-2 shadow-md text-center min-w-[100px]">
+                        <div className="text-lg font-bold">{sector.stats.businessClients}</div>
+                        <div className="text-xs opacity-90">Business Clients</div>
+                      </div>
+                      <div className="bg-gradient-to-br from-green-500 to-green-600 text-white rounded-lg px-3 py-2 shadow-md text-center min-w-[100px]">
+                        <div className="text-lg font-bold">{sector.stats.placements}</div>
+                        <div className="text-xs opacity-90">Placements</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="bg-gradient-to-r from-gray-50 to-gray-100 px-4 sm:px-8 py-6 border-t border-gray-200">
+              <div className="hidden md:grid grid-cols-12 gap-4 items-center">
+                <div className="col-span-5 flex items-center">
+                  <div className="flex items-center space-x-2">
+                    <div className="w-3 h-3 bg-indigo-500 rounded-full animate-pulse"></div>
+                    <span className="text-sm font-medium text-gray-700">Total Non-Healthcare Sectors: {nonHealthcareSectors.length}</span>
+                  </div>
+                </div>
+                <div className="col-span-4 text-center">
+                  <span className="text-sm text-gray-600">Business client and placement coverage across sectors</span>
+                </div>
+                <div className="col-span-3 flex justify-end space-x-4">
+                  <div className="text-center">
+                    <div className="text-lg font-bold text-indigo-600">
+                      {nonHealthcareSectors.reduce((sum, s) => sum + parseInt(s.stats.businessClients.replace('+', '')), 0)}+
+                    </div>
+                    <div className="text-xs text-gray-500">Business Clients</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-lg font-bold text-green-600">
+                      {nonHealthcareSectors.reduce((sum, s) => sum + parseInt(s.stats.placements.replace('+', '')), 0)}+
+                    </div>
+                    <div className="text-xs text-gray-500">Placements</div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="md:hidden space-y-4 text-center">
+                <div className="flex items-center justify-center">
+                  <div className="flex items-center space-x-2">
+                    <div className="w-3 h-3 bg-indigo-500 rounded-full animate-pulse"></div>
+                    <span className="text-sm font-medium text-gray-700">Total Non-Healthcare Sectors: {nonHealthcareSectors.length}</span>
+                  </div>
+                </div>
+                <div className="flex justify-center space-x-6">
+                  <div className="text-center">
+                    <div className="text-lg font-bold text-indigo-600">
+                      {nonHealthcareSectors.reduce((sum, s) => sum + parseInt(s.stats.businessClients.replace('+', '')), 0)}+
+                    </div>
+                    <div className="text-xs text-gray-500">Business Clients</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-lg font-bold text-green-600">
+                      {nonHealthcareSectors.reduce((sum, s) => sum + parseInt(s.stats.placements.replace('+', '')), 0)}+
+                    </div>
+                    <div className="text-xs text-gray-500">Placements</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Positions We Fill */}
-      <section className="py-20 px-4 bg-white">
+      {/* <section className="py-20 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-800 mb-4">Positions We Fill</h2>
@@ -683,14 +847,14 @@ export default function Industries() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Call to Action */}
       <section className="py-20 px-4" style={{background: 'linear-gradient(to right, #0d74bb, #0d74bb)'}}>
         <div className="max-w-4xl mx-auto text-center text-white">
           <h2 className="text-4xl font-bold mb-6">Ready to Find Your Perfect Match?</h2>
           <p className="text-xl mb-8 opacity-90">
-            Whether you're looking for temporary, permanent, or contract positions, we have opportunities across all healthcare sectors.
+            Whether you’re a facility looking for dependable staff or a professional seeking your next opportunity, Upscale Staffing connects the right people with the right organizations across healthcare and beyond.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="/apply" 
@@ -722,7 +886,7 @@ export default function Industries() {
                 <img src="/logo.png" alt="Upscale Staffing" className="h-12 w-auto" />
               </div>
               <p className="text-gray-300 mb-6 text-lg leading-relaxed max-w-md">
-                Connecting exceptional healthcare professionals with leading medical institutions. Your trusted partner in building world-class medical teams.
+                Connecting exceptional professionals with organizations that value excellence. Your trusted partner in building high-performing teams across healthcare and beyond.
               </p>
               <div className="flex space-x-4">
                 <div className="w-12 h-12 rounded-2xl flex items-center justify-center hover:shadow-lg transition-all duration-300 cursor-pointer" style={{background: 'linear-gradient(to bottom right, #3b82f6, #0d74bb)'}}>
@@ -751,7 +915,7 @@ export default function Industries() {
               <h3 className="font-bold text-xl mb-6 text-white">Company</h3>
               <ul className="space-y-3 text-gray-300">
                 <li><a href="/about" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>About Us</a></li>
-                <li><a href="/about" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Our Team</a></li>
+                 
                 <li><a href="/apply" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Careers</a></li>
                 <li><a href="/contact" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Contact</a></li>
                 <li><a href="/about" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>News & Updates</a></li>
@@ -762,9 +926,9 @@ export default function Industries() {
               <ul className="space-y-3 text-gray-300">
                 <li><a href="/industries" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Clinical Staffing</a></li>
                 <li><a href="/industries" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Non-Clinical Staff</a></li>
-                <li><a href="/industries" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Flexible Coverage</a></li>
+                {/* <li><a href="/industries" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Flexible Coverage</a></li>
                 <li><a href="/industries" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Workforce Compliance</a></li>
-                <li><a href="/industries" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Talent Acquisition</a></li>
+                <li><a href="/industries" className="transition-colors duration-300 flex items-center" onMouseEnter={(e) => e.target.style.color = '#0d74bb'} onMouseLeave={(e) => e.target.style.color = '#d1d5db'}><span className="mr-2">→</span>Talent Acquisition</a></li> */}
               </ul>
             </div>
             <div>
@@ -788,8 +952,8 @@ export default function Industries() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
                   <div>
-                    <span className="block">Upscale Management Solutions</span>
-                    <span className="block">Healthcare Staffing Division</span>
+                    <span className="block">Upscale Staffing</span>
+                    
                     <span className="block">6301 Ivy Lane Suite 512</span>
                 <span className="block">Greenbelt Maryland 20770</span>
                   </div>

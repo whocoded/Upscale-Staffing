@@ -159,7 +159,7 @@ export default function Home2() {
                     </svg>
                   </div>
                   <h3 className="font-semibold text-gray-900">Mike Chen</h3>
-                  <p className="text-sm text-gray-500">Full Stack Developer</p>
+                  <p className="text-sm text-gray-500">Registered Nurse (RN)</p>
                   <div className="flex items-center mt-2">
                     <div className="flex text-yellow-400">
                       {[...Array(5)].map((_, i) => (
@@ -462,7 +462,7 @@ export default function Home2() {
                 </div>
               </div>
               <p className="text-gray-700 mb-6">
-                "Professional, reliable, and results-driven. They helped us build our entire development team from scratch. Couldn't be happier with the results."
+                "Professional, reliable, and results-driven. They helped us staff our nursing unit quickly with qualified clinicians. We couldn’t be happier with the coverage and continuity of care."
               </p>
               <div className="flex text-yellow-400">
                 {[...Array(5)].map((_, i) => (
