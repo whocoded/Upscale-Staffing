@@ -62,7 +62,7 @@ export default function Services() {
                 <div className="absolute top-16 right-8 w-4 h-4 bg-white/30 rounded-full"></div>
                 {/* Decorative background image */}
                 <img
-                  src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=1200&q=80"
+                  src="/img/none.jpg"
                   alt="Team collaboration"
                   className="absolute inset-0 w-full h-full object-cover opacity-20"
                 />
@@ -136,7 +136,7 @@ export default function Services() {
               <div className="relative">
                 <div className="rounded-2xl overflow-hidden h-96 shadow-lg">
                   <img
-                    src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=1200&q=80"
+                    src="/img/abt2.jpg"
                     alt="Clinical staffing professionals supporting patient care"
                     className="w-full h-full object-cover"
                   />

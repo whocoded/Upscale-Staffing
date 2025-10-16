@@ -465,7 +465,7 @@ export default function Home() {
               <div className="relative rounded-3xl overflow-hidden" style={{backgroundColor: '#0d74bb'}}>
                 <div className="p-8">
                   <img 
-                    src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                    src="/img/abt.jpg" 
                     alt="Upscale Staffing Team" 
                     className="w-full h-80 object-cover rounded-2xl"
                   />
@@ -607,7 +607,7 @@ export default function Home() {
               <div className="bg-gradient-to-br from-teal-400 to-teal-600 rounded-3xl overflow-hidden shadow-2xl">
                 {/* Healthcare Recruitment Image */}
                 <img
-              src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+              src="/img/proc.jpg"
               alt="Healthcare recruitment professionals connecting nurses with medical facilities"
               className="aspect-[4/3] w-full object-cover"
                 />
@@ -878,7 +878,7 @@ export default function Home() {
                 {/* Main Image Placeholder (replaced with relevant image) */}
                 <div className="w-full h-80 bg-gradient-to-br from-blue-100 to-white rounded-2xl relative overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" 
+                    src="/img/abt2.jpg" 
                     alt="Healthcare professionals collaborating in a hospital" 
                     className="w-full h-full object-cover rounded-2xl"
                   />

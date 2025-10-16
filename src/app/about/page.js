@@ -120,7 +120,7 @@ export default function About() {
                   {/* Professional Woman */}
                   <div className="relative z-10">
                     <img 
-                      src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=500&fit=crop&crop=face" 
+                      src="/img/abt.jpg" 
                       alt="Professional Healthcare Consultant" 
                       className="w-full h-96 object-cover object-center rounded-2xl"
                     />
@@ -199,12 +199,12 @@ export default function About() {
                 </div>
               </div>
               <div className="relative">
-                <div className="rounded-2xl p-8 h-96 flex items-center justify-center" style={{background: 'linear-gradient(to bottom right, #dbeafe, #e6f3ff)'}}>
-                  <div className="text-center">
-                    <div className="text-6xl mb-4">🏥</div>
-                    <h3 className="text-2xl font-bold text-gray-800 mb-2">Since 2015</h3>
-                    <p className="text-gray-600">Serving Healthcare Excellence</p>
-                  </div>
+                <div className="rounded-2xl p-0 h-96 flex items-center justify-center" style={{background: 'linear-gradient(to bottom right, #dbeafe, #e6f3ff)'}}>
+                  <img 
+                      src="/img/abt2.jpg" 
+                      alt="Professional Healthcare Consultant" 
+                      className="w-full h-96 object-cover object-center rounded-2xl"
+                    />
                 </div>
               </div>
             </div>
